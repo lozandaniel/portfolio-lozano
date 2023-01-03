@@ -1,0 +1,26 @@
+---
+import Footer from "../components/principals/Footer.astro";
+import Header from "../components/principals/Header.astro";
+import Main from "../components/principals/Main.astro";
+import Layout from "../layout/layout.astro";
+---
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica,
+      Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<Layout>
+  <Header />
+  <Main />
+  <Footer />
+</Layout>
