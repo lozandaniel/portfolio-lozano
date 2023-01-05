@@ -1,25 +1,31 @@
 ---
-
+import { projects } from "../data/data.js";
 ---
 
-<section class="bg-yellow-500">
-  <div>
-    <h3>Projects</h3>
-    <div>
-      <picture>
-        <img src="" alt="" />
-      </picture>
-      <h3>Rick and Morty API</h3>
-      <p>
-        Es una pagina web la cual se consumio la API de la pagina de Rick and
-        Morty para obtener una lista de personajes.
-      </p>
-      <div>
-        <h3>Tecnologias utililizadas.</h3>
-        <div>
-          
-        </div>
-      </div>
+<section>
+  <div class="py-8">
+    <h2 class="text-center font-bold text-2xl pb-6">Projects</h2>
+    <div
+      class="grid gap-5 auto-rows-auto grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"
+    >
+      {
+        projects.map(({ name, description, image, technologies }) => (
+          <div class="flex flex-col justify-center bg-zinc-700/50 p-4 rounded-md">
+            <picture class=" bg-red-600 flex justify-center ">
+              <img src={image} alt="Image" class="w-full h-auto" />
+            </picture>
+            <h3 class="py-4 text-center font-semibold">{name}</h3>
+            <p class="py-4">{description}</p>
+            <div>
+              <span class="text-cyan-400">Tecnologias utilizadas:</span>
+              <div>
+                <span>Js</span>
+                <span>Html</span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
