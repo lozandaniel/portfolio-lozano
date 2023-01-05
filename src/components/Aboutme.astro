@@ -1,28 +1,33 @@
 ---
-import ImageMe from "/images/me.png"
+import ImageMe from "/images/me.png";
 ---
 
 <section
-  class="flex flex-col justify-center w-full items-center md:flex-row pt-16"
+  class="flex flex-col justify-center items-center"
 >
-  <div
-    class="w-full h-auto break-words flex-1 flex items-center justify-center"
-  >
-    <img
-      src={ImageMe}
-      alt="Yo"
-      class="w-6/12 h-auto rounded-full bg-no-repeat bg-p bg-center bg-cover"
-    />
-    <h1
-      class="w-2/3 m-0 sm:text-4xl py-32 max-sm:text-[22px] text-start font-bold text-cyan-400 p-0 leading-none tracking-tighter"
+  <div class="w-full bg-red-700 md:flex-row">
+    <div
+      class="w-full h-auto break-words flex-1 flex items-center justify-center"
     >
-      Daniel Lozano
-      <span class="p">Developer</span>
-    </h1>
-  </div>
-  <div class="py-10">
-    ¡Hola! Soy una persona autodidacta con muchas ganas de aprender y mejorar
-    mis habilidades para el mundo del desarrollo, siempre con buena actitud y
-    entusiasmo, actualmente realizando un tecnologo en Desarrollo de Software.
+      <img
+        src={ImageMe}
+        alt="Yo"
+        class="w-1/2 max-w-[300px] h-auto rounded-full bg-no-repeat bg-p bg-center bg-cover"
+      />
+      <h1
+        class="w-2/3 m-0 sm:text-5xl py-32 max-sm:text-[30px] md:text-6xl text-start font-bold text-cyan-400 p-0 leading-none tracking-tighter"
+      >
+        Daniel Lozano
+        <span class="p">Developer</span>
+      </h1>
+    </div>
+    <div class="py-6">
+      <p>
+        ¡Hola! Soy una persona autodidacta con muchas ganas de aprender y
+        mejorar mis habilidades para el mundo del desarrollo, siempre con buena
+        actitud y entusiasmo, actualmente realizando un tecnologo en Desarrollo
+        de Software.
+      </p>
+    </div>
   </div>
 </section>
