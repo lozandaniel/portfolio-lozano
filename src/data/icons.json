@@ -1,0 +1,78 @@
+{
+  "actual": [
+    {
+      "title": "html",
+      "image": "/actuales_ti/html.svg"
+    },
+    {
+      "title": "js",
+      "image": "/actuales_ti/js.svg"
+    },
+    {
+      "title": "css",
+      "image": "/actuales_ti/css.svg"
+    },
+    {
+      "title": "react",
+      "image": "/actuales_ti/react.svg"
+    },
+    {
+      "title": "npm",
+      "image": "/actuales_ti/npm.svg"
+    },
+    {
+      "title": "tailwind",
+      "image": "/actuales_ti/tailwind.svg"
+    },
+    {
+      "title": "vite",
+      "image": "/actuales_ti/vite.svg"
+    },
+    {
+      "title": "git",
+      "image": "/actuales_ti/git.svg"
+    },
+    {
+      "title": "github",
+      "image": "/actuales_ti/github.svg"
+    },
+    {
+      "title": "vscode",
+      "image": "/actuales_ti/vscode.svg"
+    }
+  ],
+  "futuras_ti": [
+    {
+      "title": "Node.js",
+      "image": "/futuras_ti/nodejs.svg"
+    },
+    {
+      "title": "Python",
+      "image": "/futuras_ti/python.svg"
+    },
+    {
+      "title": "Next.js",
+      "image": "/futuras_ti/nextjs.svg"
+    },
+    {
+      "title": "MySQL",
+      "image": "/futuras_ti/mysql.svg"
+    },
+    {
+      "title": "Express",
+      "image": "/futuras_ti/express.svg"
+    },
+    {
+      "title": "Java",
+      "image": "/futuras_ti/java.svg"
+    },
+    {
+      "title": "Firebase",
+      "image": "/futuras_ti/firebase.svg"
+    },
+    {
+      "title": "GraphQL",
+      "image": "/futuras_ti/graphql.svg"
+    }
+  ] 
+}
