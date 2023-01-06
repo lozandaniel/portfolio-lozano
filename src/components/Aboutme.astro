@@ -1,10 +1,10 @@
 ---
 import ImageMe from "/images/me.png";
+import { actual, futuras_ti } from "../data/icons.json";
 ---
 
-<section
-  class="flex flex-col justify-center items-center"
->
+<section class="flex flex-col justify-center items-center">
+  <span class="mt-36"></span>
   <div class="w-full bg-red-700 md:flex-row">
     <div
       class="w-full h-auto break-words flex-1 flex items-center justify-center"
@@ -12,17 +12,52 @@ import ImageMe from "/images/me.png";
       <img
         src={ImageMe}
         alt="Yo"
-        class="w-1/2 max-w-[300px] h-auto rounded-full bg-no-repeat bg-p bg-center bg-cover"
+        class="w-1/2 max-w-[350px] h-auto rounded-full bg-no-repeat bg-p bg-center bg-cover"
       />
       <h1
-        class="w-2/3 m-0 sm:text-5xl py-32 max-sm:text-[30px] md:text-6xl text-start font-bold text-cyan-400 p-0 leading-none tracking-tighter"
+        class="w-2/3 m-0 sm:text-5xl py-32 max-sm:text-[30px] md:text-7xl text-start font-bold text-cyan-400 p-0 leading-none tracking-tighter"
       >
         Daniel Lozano
-        <span class="p">Developer</span>
+        <span>Developer</span>
       </h1>
     </div>
-    <div class="py-6">
-      <p>
+  </div>
+  <span class="mt-40"></span>
+</section>
+
+<section>
+  <div class="py-6 px-4 bg-green-600 w-full md:flex">
+    <div class="flex-1 bg-red-700">
+      <h3 class="text-center text-xl font-semibold">Habilidades</h3>
+      <ul
+        class="grid grid-cols-3 py-4 place-items-center m-auto justify-center w-3/4 md:grid-cols-4"
+      >
+        {
+          actual.map((icon) => (
+            <li class="flex flex-col items-center bg-cyan-500/50 w-14 my-1">
+              <img class="w-7" src={icon.image} alt={icon.title} />
+              <span class="capitalize text-xs">{icon.title}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <h3 class="text-center text-xl font-semibold">Aprendiendo</h3>
+      <ul
+        class="grid grid-cols-3 py-4 place-items-center m-auto justify-center w-3/4 md:grid-cols-4"
+      >
+        {
+          futuras_ti.map((icon) => (
+            <li class="flex flex-col items-center bg-cyan-500/50 w-14 my-1">
+              <img class="w-7" src={icon.image} alt={icon.title} />
+              <span class="capitalize text-xs">{icon.title}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="flex-1 bg-blue-400">
+      <h2 class="text-center font-bold text-2xl">Acerca de mi</h2>
+      <p class="p-4">
         ¡Hola! Soy una persona autodidacta con muchas ganas de aprender y
         mejorar mis habilidades para el mundo del desarrollo, siempre con buena
         actitud y entusiasmo, actualmente realizando un tecnologo en Desarrollo
