@@ -1,5 +1,5 @@
 ---
-import { projects } from "../data/data.js";
+import projects from "../data/data.json";
 ---
 
 <section>
@@ -19,8 +19,9 @@ import { projects } from "../data/data.js";
             <div>
               <span class="text-cyan-400">Tecnologias utilizadas:</span>
               <div>
-                <span>Js</span>
-                <span>Html</span>
+                {technologies.map((el) => (
+                  <img  src={el}/>
+                ))}
               </div>
             </div>
           </div>
