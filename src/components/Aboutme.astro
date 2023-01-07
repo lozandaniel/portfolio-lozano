@@ -1,11 +1,12 @@
 ---
-import ImageMe from "/images/me.png";
+import ImageMe from "/me.png";
 import { actual, futuras_ti } from "../data/icons.json";
+import TableTics from "./TableTics.astro";
 ---
 
 <section class="flex flex-col justify-center items-center">
-  <span class="mt-36"></span>
-  <div class="w-full bg-red-700 md:flex-row">
+  <span class="mt-32"></span>
+  <div class="w-full md:flex-row">
     <div
       class="w-full h-auto break-words flex-1 flex items-center justify-center"
     >
@@ -18,51 +19,56 @@ import { actual, futuras_ti } from "../data/icons.json";
         class="w-2/3 m-0 sm:text-5xl py-32 max-sm:text-[30px] md:text-7xl text-start font-bold text-cyan-400 p-0 leading-none tracking-tighter"
       >
         Daniel Lozano
-        <span>Developer</span>
+        <span id="dev-title">Developer</span>
       </h1>
     </div>
   </div>
   <span class="mt-40"></span>
 </section>
 
-<section>
-  <div class="py-6 px-4 bg-green-600 w-full md:flex">
-    <div class="flex-1 bg-red-700">
-      <h3 class="text-center text-xl font-semibold">Habilidades</h3>
-      <ul
-        class="grid grid-cols-3 py-4 place-items-center m-auto justify-center w-3/4 md:grid-cols-4"
-      >
-        {
-          actual.map((icon) => (
-            <li class="flex flex-col items-center bg-cyan-500/50 w-14 my-1">
-              <img class="w-7" src={icon.image} alt={icon.title} />
-              <span class="capitalize text-xs">{icon.title}</span>
-            </li>
-          ))
-        }
-      </ul>
-      <h3 class="text-center text-xl font-semibold">Aprendiendo</h3>
-      <ul
-        class="grid grid-cols-3 py-4 place-items-center m-auto justify-center w-3/4 md:grid-cols-4"
-      >
-        {
-          futuras_ti.map((icon) => (
-            <li class="flex flex-col items-center bg-cyan-500/50 w-14 my-1">
-              <img class="w-7" src={icon.image} alt={icon.title} />
-              <span class="capitalize text-xs">{icon.title}</span>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div class="flex-1 bg-blue-400">
-      <h2 class="text-center font-bold text-2xl">Acerca de mi</h2>
-      <p class="p-4">
-        ¡Hola! Soy una persona autodidacta con muchas ganas de aprender y
-        mejorar mis habilidades para el mundo del desarrollo, siempre con buena
-        actitud y entusiasmo, actualmente realizando un tecnologo en Desarrollo
-        de Software.
+<section class="p-4 bg-zinc-700 w-full md:flex rounded-md mb-12">
+  <div class="flex-1 pb-6 md:pb-0">
+    <h3 class="text-center text-xl font-bold">Habilidades</h3>
+    <TableTics tics={actual} />
+    <h3 class="text-center text-xl font-bold">Aprendiendo</h3>
+    <TableTics tics={futuras_ti} />
+  </div>
+  <div class="flex-1 bg-cyan-500 rounded-lg p-6 flex flex-col justify-center my-10">
+    <h3 class="text-center font-bold text-2xl pb-4">Acerca de mi</h3>
+    <p class="mb-8">
+      Soy una persona autodidacta con muchas de aprender cosas nuevas. Mejorando
+      mis habilidades en el mundo del desarrollo de software, siempre contando
+      con buen animo y actitud.
+    </p>
+    <p class="mb-8">
+      Una de mis hobbies favoritos es la programación. Asi con el fin de
+      aprender y nunca desistir en el mundo de las Tic's, pudiendo mejorar dia a
+      dia, cosas nuevas que voy adquiriendo en el proceso.
+    </p>
+    <p class="mb-8">
+      Con ganas de mover las manitas en proyectos nuevos para poner a prueba las
+      habilidades adquiridas.
+    </p>
+    <div>
+      <h5 class="text-xl font-semibold">Nacionalidad</h5>
+      <p>
+        <em>● Bogota - Colombia</em>
       </p>
     </div>
   </div>
 </section>
+
+<script>
+  const spanTitle = document.getElementById("dev-title");
+  function writeLetter() {
+    const joinLetter = spanTitle.textContent;
+    let acm = 0;
+    /* let writing = setInterval(() => {
+      spanTitle.innerHTML += joinLetter[acm];
+      acm++;
+      if (acm === spanTitle.textContent.length) {
+        clearInterval(writing);
+      }
+    }, 500); */
+  }
+</script>
