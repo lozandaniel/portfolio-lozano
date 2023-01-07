@@ -5,12 +5,12 @@
       "image": "/actuales_ti/html.svg"
     },
     {
-      "title": "js",
-      "image": "/actuales_ti/js.svg"
-    },
-    {
       "title": "css",
       "image": "/actuales_ti/css.svg"
+    },
+    {
+      "title": "js",
+      "image": "/actuales_ti/js.svg"
     },
     {
       "title": "react",
@@ -25,10 +25,6 @@
       "image": "/actuales_ti/tailwind.svg"
     },
     {
-      "title": "vite",
-      "image": "/actuales_ti/vite.svg"
-    },
-    {
       "title": "git",
       "image": "/actuales_ti/git.svg"
     },
@@ -39,6 +35,10 @@
     {
       "title": "vscode",
       "image": "/actuales_ti/vscode.svg"
+    },
+    {
+      "title": "vite",
+      "image": "/actuales_ti/vite.svg"
     }
   ],
   "futuras_ti": [
@@ -47,32 +47,36 @@
       "image": "/futuras_ti/nodejs.svg"
     },
     {
-      "title": "Python",
-      "image": "/futuras_ti/python.svg"
+      "title": "MySQL",
+      "image": "/futuras_ti/mysql.svg"
     },
     {
       "title": "Next.js",
       "image": "/futuras_ti/nextjs.svg"
     },
     {
-      "title": "MySQL",
-      "image": "/futuras_ti/mysql.svg"
-    },
-    {
       "title": "Express",
       "image": "/futuras_ti/express.svg"
-    },
-    {
-      "title": "Java",
-      "image": "/futuras_ti/java.svg"
     },
     {
       "title": "Firebase",
       "image": "/futuras_ti/firebase.svg"
     },
     {
+      "title": "Python",
+      "image": "/futuras_ti/python.svg"
+    },
+    {
+      "title": "Java",
+      "image": "/futuras_ti/java.svg"
+    },
+    {
       "title": "GraphQL",
       "image": "/futuras_ti/graphql.svg"
+    },
+    {
+      "title": "Deno",
+      "image": "/futuras_ti/deno.svg"
     }
-  ] 
+  ]
 }
