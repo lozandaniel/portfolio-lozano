@@ -30,9 +30,24 @@
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Rick And Morty API",
     "image": "/rick-and-morty.png",
+    "description": "Es una pagina web la cual se consumio la API de la pagina de Rick and Morty para obtener una lista de personajes.",
+    "technologies": [
+      "/actuales_ti/html.svg",
+      "/actuales_ti/css.svg",
+      "/actuales_ti/react.svg"
+    ],
+    "links": {
+      "repo": "",
+      "website": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Rick And Morty API",
+    "image": "./rick-and-morty.png",
     "description": "Es una pagina web la cual se consumio la API de la pagina de Rick and Morty para obtener una lista de personajes.",
     "technologies": [
       "/actuales_ti/html.svg",
