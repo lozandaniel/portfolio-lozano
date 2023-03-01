@@ -1,15 +1,15 @@
 ---
- const {tics} = Astro.props
+const { tics } = Astro.props;
 ---
 
 <ul
-  class="grid grid-cols-3 py-4 place-items-center m-auto justify-center w-3/5 xl:grid-cols-4 [&>li:hover]:scale-125 "
+  class="w-1/2 m-auto grid grid-cols-3 py-4 place-items-center justify-center xl:grid-cols-4 [&>li:hover]:scale-125"
 >
   {
     tics.map((icon) => (
       <li class="group flex flex-col items-center my-1 transition">
         <img
-          class="w-12 group-hover:drop-shadow-[0px_0px_8px_#fff] drop-shadow-[0px_0px_4px_#fff] h-10 aspect-square"
+          class="w-12 group-hover:drop-shadow-[0px_0px_4px_#fff] drop-shadow-[0px_0px_2px_#fff] h-10 aspect-square"
           src={icon.image}
           alt={icon.title}
         />

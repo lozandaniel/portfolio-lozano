@@ -1,5 +1,5 @@
 ---
-import projects from "../data/data_projects.json";
+import projects from '../data/data_projects.json'
 ---
 
 <section class="py-4 pb-32">
@@ -9,44 +9,37 @@ import projects from "../data/data_projects.json";
   >
     {
       projects.map((project) => {
-        const { description, image, technologies, name, links } = project;
-        const { repo, website } = links;
+        const { description, image, technologies, name, links } = project
+        const { repo, website } = links
 
         return (
           <article class="flex flex-col justify-center shadow-3xl p-4 rounded-md">
-            <div class="flex relative w-full h-auto group">
+            <div class="w-full h-auto flex relative group">
               <img
                 class="transition group-hover:scale-105 object-fill"
                 src={image}
-                alt={"Imagen del proyecto" + name}
+                alt={'Imagen del proyecto' + name}
               />
               <div class="flex gap-4 absolute bg-zinc-800/70 w-full h-full opacity-0 visible group-hover:opacity-100 group-hover:scale-105 transition-all items-center justify-center">
                 <a href={`${repo}`} target="_blank">
                   <img
                     class="w-8 group-hover:scale-150"
                     src="/actuales_ti/github.svg"
-                    alt="GitHub"
-                  />
-                </a>
-                <a href={`${website}`} target="_blank">
-                  <img
-                    class="w-8 group-hover:scale-150"
-                    src="/link.svg"
-                    alt="Link Icon"
+                    alt={`Repo Github de: ${name}`}
                   />
                 </a>
               </div>
             </div>
             <h3 class="py-4 text-center font-semibold text-lg">{name}</h3>
             <p class="pb-4">{description}</p>
-            <div class="flex-1 flex justify-center items-center gap-3">
-              <span class="text-[#666]">Tecnologias utilizadas -> </span>
+            <div class="flex justify-center items-center gap-2">
+              <span class="text-[#666]">Tecnologias utilizadas - </span>
               {technologies.map((el) => (
-                <img class="w-8 h-8" src={el} alt="Icons" />
+                <img class="w-7 h-7" src={el} alt="Icons" />
               ))}
             </div>
           </article>
-        );
+        )
       })
     }
   </div>
