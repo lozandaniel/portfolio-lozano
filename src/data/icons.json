@@ -1,44 +1,47 @@
 {
   "actual": [
     {
-      "title": "html",
+      "title": "Html",
       "image": "/actuales_ti/html.svg"
     },
     {
-      "title": "css",
+      "title": "Css",
       "image": "/actuales_ti/css.svg"
     },
     {
-      "title": "js",
+      "title": "Js",
       "image": "/actuales_ti/js.svg"
     },
     {
-      "title": "react",
+      "title": "React",
       "image": "/actuales_ti/react.svg"
     },
     {
-      "title": "npm",
+      "title": "Npm",
       "image": "/actuales_ti/npm.svg"
     },
     {
-      "title": "tailwind",
+      "title": "Tailwind",
       "image": "/actuales_ti/tailwind.svg"
     },
     {
-      "title": "git",
+      "title": "Git",
       "image": "/actuales_ti/git.svg"
     },
     {
-      "title": "github",
+      "title": "GitHub",
       "image": "/actuales_ti/github.svg"
     },
     {
-      "title": "vscode",
+      "title": "VsCode",
       "image": "/actuales_ti/vscode.svg"
     },
     {
-      "title": "vite",
+      "title": "Vite",
       "image": "/actuales_ti/vite.svg"
+    }, {
+      "title": "Astro",
+      "image": "/actuales_ti/astro.svg"
     }
   ],
   "futuras_ti": [
@@ -51,16 +54,20 @@
       "image": "/futuras_ti/mysql.svg"
     },
     {
-      "title": "Next.js",
-      "image": "/futuras_ti/nextjs.svg"
-    },
-    {
       "title": "Express",
       "image": "/futuras_ti/express.svg"
     },
     {
+      "title": "Next.js",
+      "image": "/futuras_ti/nextjs.svg"
+    },
+    {
       "title": "Firebase",
       "image": "/futuras_ti/firebase.svg"
+    },
+    {
+      "title": "GraphQL",
+      "image": "/futuras_ti/graphql.svg"
     },
     {
       "title": "Python",
@@ -71,12 +78,16 @@
       "image": "/futuras_ti/java.svg"
     },
     {
-      "title": "GraphQL",
-      "image": "/futuras_ti/graphql.svg"
-    },
-    {
       "title": "Deno",
       "image": "/futuras_ti/deno.svg"
+    },
+    {
+      "title": "Docker",
+      "image": "/futuras_ti/docker.svg"
+    },
+    {
+      "title": "Aws",
+      "image": "/futuras_ti/aws.svg"
     }
   ]
 }
