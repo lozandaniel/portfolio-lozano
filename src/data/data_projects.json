@@ -12,17 +12,16 @@
   },
   {
     "id": 1,
-    "name": "CRUD FullStack",
-    "image": "/rick-and-morty.png",
-    "description": "Es una pagina web la cual se consumio la API de la pagina de Rick and Morty para obtener una lista de personajes.",
+    "name": "Chat RealTime",
+    "image": "/chat-realtime.png",
+    "description": "Pagina hecha con la finalidad de realizar tanto el backend como el frontend con una libreria de Socket.io, asi haciendo el Chat Realtime.",
     "technologies": [
-      "/futuras_ti/mysql.svg",
-      "/futuras_ti/nodejs.svg",
       "/futuras_ti/express.svg",
+      "/futuras_ti/nodejs.svg",
       "/actuales_ti/react.svg"
     ],
     "links": {
-      "repo": "",
+      "repo": "https://github.com/lozandaniel/app-chat-realtime",
       "website": ""
     }
   },

@@ -1,4 +1,5 @@
 ---
+import DarkMode from './DarkMode.astro'
 import ImageMe from '/me.png'
 ---
 
@@ -50,6 +51,7 @@ import ImageMe from '/me.png'
             </span>
           </a>
         </button>
+        <DarkMode />
       </div>
       <h1
         class="max-sm:text-4xl sm:text-5xl md:text-7xl xl:text-8xl text-center font-bold text-white tracking-tighter md:mb-6 mb-0 -z-10"
@@ -62,7 +64,16 @@ import ImageMe from '/me.png'
           class="flex list-none items-center m-0 p-0 gap-3 [&>li>a:hover]:text-black font-medium text-[#434343] mb-2"
         >
           <li>
-            <a href="#skills">Skills</a>
+            <a
+              href="#skills"
+              class="group transition-all ease-in-out duration-300"
+            >
+              <span
+                class="bg-left-bottom bg-gradient-to-bl bg-no-repeat from-pink-500 to-pink-500 bg-[length:50%_2px] group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+              >
+                Skills</span
+              >
+            </a>
           </li>
           <li>
             <a href="#projects">Projects</a>
@@ -74,7 +85,7 @@ import ImageMe from '/me.png'
       </nav>
     </div>
     <div
-      class="w-full h-auto bg-zinc-600 flex flex-1 items-center justify-center py-10 rounded-r-lg"
+      class="w-full h-auto bg-zinc-600 flex flex-1 items-center justify-center py-10 md:rounded-b-none md:rounded-r-lg rounded-b-lg"
     >
       <img
         src={ImageMe}
