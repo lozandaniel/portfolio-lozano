@@ -15,11 +15,7 @@
     "name": "Chat RealTime",
     "image": "/chat-realtime.png",
     "description": "Pagina hecha con la finalidad de realizar tanto el backend como el frontend con una libreria de Socket.io, asi haciendo el Chat Realtime.",
-    "technologies": [
-      "/futuras_ti/express.svg",
-      "/futuras_ti/nodejs.svg",
-      "/actuales_ti/react.svg"
-    ],
+    "technologies": ["/futuras_ti/nodejs.svg", "/actuales_ti/react.svg"],
     "links": {
       "repo": "https://github.com/lozandaniel/app-chat-realtime",
       "website": ""

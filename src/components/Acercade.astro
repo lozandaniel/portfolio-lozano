@@ -7,26 +7,10 @@ import ImageMe from '/me.png'
   class="flex flex-col justify-center items-center my-28 rounded-lg bg-cyan-500"
 >
   <div class="w-full md:flex-row flex flex-col">
-    <div
+    <article
       class="w-full flex flex-col flex-1 justify-center items-center text-center rounded-lg py-4 z-30"
     >
-      <div class="flex items-center gap-x-2">
-        <div class="flex">
-          <a
-            href="https://www.linkedin.com/in/daniel-lozano11/"
-            target="_blank"
-          >
-            <img src="/linkedink.svg" alt="Linkedin" class="w-10" />
-          </a>
-          <a
-            class="text-white"
-            href="https://github.com/lozandaniel"
-            target="_blank"
-          >
-            <img src="/actuales_ti/github.svg" alt="Github" class="w-10" />
-          </a>
-        </div>
-        <button>
+      <!-- <button>
           <a
             href="#"
             target="_blank"
@@ -50,48 +34,68 @@ import ImageMe from '/me.png'
               </svg>
             </span>
           </a>
-        </button>
-        <DarkMode />
-      </div>
-      <h1
-        class="max-sm:text-4xl sm:text-5xl md:text-7xl xl:text-8xl text-center font-bold text-white tracking-tighter md:mb-6 mb-0 -z-10"
-      >
-        Daniel Lozano
-        <span class="text-black animate-text" id="dev-title">Developer</span>
-      </h1>
+        </button> -->
       <nav class="sm:block hidden">
         <ul
-          class="flex list-none items-center m-0 p-0 gap-3 [&>li>a:hover]:text-black font-medium text-[#434343] mb-2"
+          class="flex list-none items-center font-semibold m-0 p-0 gap-3 [&>li>a:hover]:text-black text-[#434343] mb-2"
         >
           <li>
             <a
               href="#skills"
               class="group transition-all ease-in-out duration-300"
             >
-              <span
-                class="bg-left-bottom bg-gradient-to-bl bg-no-repeat from-pink-500 to-pink-500 bg-[length:50%_2px] group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-              >
-                Skills</span
-              >
+              Skills
             </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a
+              href="#projects"
+              class="group transition-all ease-in-out duration-300">Projects</a
+            >
           </li>
           <li>
-            <a href="#estudio">Estudio</a>
+            <a
+              href="#estudio"
+              class="group transition-all ease-in-out duration-300">Estudio</a
+            >
+          </li>
+          <li>
+            <DarkMode />
           </li>
         </ul>
       </nav>
-    </div>
-    <div
+      <div>
+        <h1
+          class="max-sm:text-5xl sm:text-5xl md:text-6xl xl:text-8xl text-center font-bold text-white tracking-tighter md:mb-6 mb-0 -z-10"
+        >
+          Daniel Lozano
+          <span class="text-black animate-text" id="dev-title">Developer</span>
+        </h1>
+        <p class="font-semibold my-5 text-white">
+          Estudiante en Desarrollo de Software
+        </p>
+      </div>
+      <div class="flex">
+        <a href="https://www.linkedin.com/in/daniel-lozano11/" target="_blank">
+          <img src="/linkedink.svg" alt="Linkedin" class="w-10" />
+        </a>
+        <a
+          class="text-white"
+          href="https://github.com/lozandaniel"
+          target="_blank"
+        >
+          <img src="/actuales_ti/github.svg" alt="Github" class="w-10" />
+        </a>
+      </div>
+    </article>
+    <article
       class="w-full h-auto bg-zinc-600 flex flex-1 items-center justify-center py-10 md:rounded-b-none md:rounded-r-lg rounded-b-lg"
     >
       <img
         src={ImageMe}
-        alt="Foto mía."
-        class="w-[40%] h-auto bg-no-repeat bg-center bg-cover"
+        alt="Foto mia."
+        class="w-[45%] h-auto bg-no-repeat bg-center bg-cover"
       />
-    </div>
+    </article>
   </div>
 </section>

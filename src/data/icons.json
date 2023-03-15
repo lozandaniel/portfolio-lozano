@@ -39,23 +39,20 @@
     {
       "title": "Vite",
       "image": "/actuales_ti/vite.svg"
-    }, {
+    },
+    {
       "title": "Astro",
       "image": "/actuales_ti/astro.svg"
+    },
+    {
+      "title": "Node.js",
+      "image": "/futuras_ti/nodejs.svg"
     }
   ],
   "futuras_ti": [
     {
-      "title": "Node.js",
-      "image": "/futuras_ti/nodejs.svg"
-    },
-    {
       "title": "MySQL",
       "image": "/futuras_ti/mysql.svg"
-    },
-    {
-      "title": "Express",
-      "image": "/futuras_ti/express.svg"
     },
     {
       "title": "Next.js",
